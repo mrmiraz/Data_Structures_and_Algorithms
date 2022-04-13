@@ -11,6 +11,9 @@ public class SeiveAlgorithm {
     Step 1: take a boolean array of size n+1 and fill with true value
     Step 2: run a loop from 2 to sqrt(n)
     Step 3: fill all the product of i with false value except i
+    
+    Time Complexity: O(n*log(log(n)))
+    Auxiliary Space: O(n)
     */
   
     public static boolean[] seive(int n){
