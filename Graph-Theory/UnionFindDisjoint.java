@@ -1,3 +1,12 @@
+/*
+Question: check wheather there is a cycle in the graph or not
+step 1: Check every edge's two are in which set
+step 2: If they are same set then there is cycle if not, then union then
+step 3: Repeat the step 2 until the cycle found or edges end
+
+*/
+
+
 import java.util.Arrays;
 import java.util.Scanner;
 
