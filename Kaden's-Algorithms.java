@@ -4,7 +4,7 @@
 public class KadensAlgorithm {
     
     public static int maxSumArray(int a[]){
-        int max_sum = 0, cur_sum = 0;
+        int max_sum = a[0], cur_sum = 0;
         for(int i = 0; i < a.length; i++){
             cur_sum = cur_sum + a[i];
             if(cur_sum > max_sum)max_sum = cur_sum;
