@@ -2,10 +2,10 @@
 Problem:Given a distance ‘dist’, count total number of ways to cover the distance with 1, 2 and 3 steps. 
 
 Algorithm: 
-Step 1: Create a recursive function (count(int n)) which takes only one parameter.
-Step 2: Check the base cases. If the value of n is less than 0 then return 0, and if value of n is equal to zero then return 1 as it is the starting position.
-Step 3: Call the function recursively with values n-1, n-2 and n-3 and sum up the values that are returned, i.e. sum = count(n-1) + count(n-2) + count(n-3).
-Step 4: Return the value of sum.
+Step 1: Create an array of size n + 1 and initialize the first 3 variables with 1, 1, 2. The base cases.
+Step 2: Run a loop from 3 to n.
+Step 3: For each index i, compute value of ith position as dp[i] = dp[i-1] + dp[i-2] + dp[i-3].
+Step 4: Print the value of dp[n], as the Count of number of ways to cover a distance.
 
 Time Complexity: O(N)
 
@@ -14,7 +14,6 @@ Sample input:
 Sample output:
 7
 */
-
 public class CoverDistance {
     
     //recursion solution
